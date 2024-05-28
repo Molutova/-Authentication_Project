@@ -1,0 +1,64 @@
+/* components */
+.main {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.main_btn {
+  width: 250px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  background: #f4f7ff;
+}
+.main_btn:hover {
+  color: blue;
+}
+.btn_main,
+.txt,
+.sign_txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_txt {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.main_txt::before,
+.main_txt::after {
+  content: "";
+  width: 60px;
+  border-bottom: 1px solid black;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.sign_btn {
+  color: blue;
+  border: none;
+  background-color: transparent;
+}
+
+.email_main {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.email_txt,
+.pass_txt {
+  font-size: 14px;
+}
+.log_btn {
+  color: white;
+  background-color: blue;
+  border: none;
+  width: 100px;
+  border-radius: 15px;
+  margin-top: 10px;
+  height: 30px;
+}
