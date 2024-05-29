@@ -12,6 +12,11 @@
   border: none;
   border-radius: 10px;
   background: #f4f7ff;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 .main_btn:hover {
   color: blue;
@@ -41,6 +46,7 @@
   color: blue;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .email_main {
@@ -50,8 +56,10 @@
   flex-direction: column;
 }
 .email_txt,
-.pass_txt {
+.pass_txt,
+.name_txt {
   font-size: 14px;
+  display: flex;
 }
 .log_btn {
   color: white;
@@ -61,4 +69,34 @@
   border-radius: 15px;
   margin-top: 10px;
   height: 30px;
+  cursor: pointer;
+}
+.pass_description {
+  display: flex;
+  gap: 7px;
+}
+.checkbox_description {
+  display: flex;
+  gap: 20px;
+}
+.signup_main,
+.checkbox_description_sign,
+.sign_btn_main {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.checkbox_description_sign {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: baseline;
+}
+.name_txt,
+.email_txt,
+.pass_txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

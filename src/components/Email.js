@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+// import eyeSlash from "../assets/eyeslash.svg";
 import "../App.css";
 
 function Email({ onLogin }) {
@@ -18,8 +19,8 @@ function Email({ onLogin }) {
   const handleLogin = () => {
     localStorage.setItem("email", email);
     localStorage.setItem("password", password);
-    navigate("/newpage"); //это я погуглила, чтобы при клике он сохранял и переходил на страницу, до этого не использовала useNavigate
-    onLogin(); //скажу правду, это я посмотрела, потому что не понимала как открывать в новой странице
+    navigate("/newpage");
+    onLogin();
   };
 
   return (
@@ -35,7 +36,10 @@ function Email({ onLogin }) {
         />
       </div>
       <div>
-        <p className="pass_txt">Password</p>
+        <div className="pass_description">
+          <p className="pass_txt">Password</p>
+          <button className="sign_btn">Forget Password</button>
+        </div>
         <input
           type="password"
           name="password"
@@ -43,14 +47,16 @@ function Email({ onLogin }) {
           value={password}
           onChange={handlePasswordChange}
         />
+        {/* <img src={eyeSlash} alt="Eye Slash" /> */}
       </div>
+      <div className="checkbox_description">
+        <input type="checkbox" name="checkbox" value="checkbox" />
+        <p>Keep me signed in</p>
+      </div>
+
       <button className="log_btn" onClick={handleLogin}>
         Login
       </button>
-      <p className="sign_txt">
-        Don’t have an Account?{" "}
-        <button className="sign_btn">Sign up here</button>
-      </p>
     </div>
   );
 }

@@ -1,10 +1,10 @@
 import "../App.css";
 import googleIcon from "../assets/google.svg";
 
-function Main() {
+function SignUpMain() {
   return (
     <div className="main">
-      <h1>Login</h1>
+      <h1>Sign Up</h1>
       <div className="btn_main">
         <button className="main_btn">
           <img src={googleIcon} alt="Sign in with Google" />
@@ -18,4 +18,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default SignUpMain;
